@@ -108,14 +108,31 @@ body header {
   height: 30rem;
   background: linear-gradient(139deg, #feda75 0%, #fa7e1e 32%, #d62976 66%, #962fbf 100%);
 }
-body section {
+body main {
+  position: relative;
+}
+body main section {
+  border: 2px solid green;
+  position: absolute;
+  top: -18em;
+  padding: 0 15em;
   display: flex;
   flex-direction: row;
   width: 100%;
 }
-body section .col {
+body main section .col {
   border: 2px solid blue;
-  flex: 1;
+}
+body main section .col1 {
+  width: 40%;
+}
+body main section .col2 {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+}
+body main section .col2 .title {
+  display: flex;
 }
 
 /*# sourceMappingURL=app.css.map */
