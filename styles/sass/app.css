@@ -101,7 +101,6 @@ h2 {
 }
 
 body header {
-  border: 2px solid blue;
   height: 30rem;
   background: linear-gradient(139deg, #feda75 0%, #fa7e1e 32%, #d62976 66%, #962fbf 100%);
 }
@@ -110,16 +109,12 @@ body main {
   margin-bottom: 10em;
 }
 body main section {
-  border: 2px solid green;
   position: absolute;
   top: -18em;
   padding: 0 18em;
   display: flex;
   flex-direction: row;
   width: 100%;
-}
-body main section .col {
-  border: 2px solid blue;
 }
 body main section .col1 {
   width: 40%;
@@ -163,14 +158,12 @@ body main section .col2 article p:first-of-type {
 body main section .col2 article p {
   padding-bottom: 1em;
 }
-body main section .col2 article .buttons {
-  border: 2px solid red;
-}
 body footer {
   width: 100vw;
   background-color: white;
   border: 2px solid orange;
-  margin-top: 40em;
+  margin-top: 46em;
+  margin-bottom: 10em;
 }
 body footer ul {
   width: 60%;
