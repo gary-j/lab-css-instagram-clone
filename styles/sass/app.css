@@ -101,7 +101,21 @@ h2 {
 }
 
 body {
-  background-color: red;
+  background-color: rgba(128, 128, 128, 0.486);
+}
+body header {
+  border: 2px solid blue;
+  height: 30rem;
+  background: linear-gradient(139deg, #feda75 0%, #fa7e1e 32%, #d62976 66%, #962fbf 100%);
+}
+body section {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+body section .col {
+  border: 2px solid blue;
+  flex: 1;
 }
 
 /*# sourceMappingURL=app.css.map */
