@@ -1,5 +1,5 @@
 body {
-  background-color: rgba(128, 128, 128, 0.486);
+  // background-color: rgba(128, 128, 128, 0.486);
 
   header {
     border: 2px solid blue;
@@ -8,17 +8,19 @@ body {
   }
   main {
     position: relative;
+    margin-bottom: 10em;
+
     section {
       border: 2px solid green;
       position: absolute;
       top: -18em;
-      padding: 0 15em;
-      // margin: 0 10em;
+      padding: 0 18em;
       display: flex;
       flex-direction: row;
       width: 100%;
       .col {
         border: 2px solid blue;
+        // max-height: 40em;
         // flex: 1;
       }
       .col1 {
@@ -31,7 +33,63 @@ body {
 
         .title {
           display: flex;
+          justify-content: space-between;
+          margin-top: 2em;
         }
+        .login {
+          background-color: $light-blue;
+          padding: 0 3em;
+          border-radius: 0.5em;
+          display: flex;
+          align-items: center;
+          color: white;
+          font-weight: 600;
+        }
+        article {
+          border: 1px solid rgb(255, 255, 255);
+          border-radius: 0.5em;
+          background-color: white;
+          height: fit-content;
+          // max-height: 100%;
+          // max-width: 100%;
+          margin-top: 2em;
+          padding: 2em 6em 0em 3em;
+          display: flex;
+          flex-direction: column;
+          align-items: stretch;
+
+          * {
+            text-align: left;
+            // padding-top: 2em;
+          }
+          p:first-of-type {
+            padding-top: 2em;
+          }
+          p {
+            padding-bottom: 1em;
+          }
+
+          .buttons {
+            border: 2px solid red;
+          }
+        }
+      }
+    }
+  }
+  footer {
+    width: 100vw;
+    background-color: white;
+    border: 2px solid orange;
+    margin-top: 40em;
+    ul {
+      width: 60%;
+      margin: auto;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      li:not(:last-of-type) {
+        font-weight: 600;
+        color: $light-blue;
       }
     }
   }

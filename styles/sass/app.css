@@ -100,9 +100,6 @@ h2 {
   text-align: center;
 }
 
-body {
-  background-color: rgba(128, 128, 128, 0.486);
-}
 body header {
   border: 2px solid blue;
   height: 30rem;
@@ -110,12 +107,13 @@ body header {
 }
 body main {
   position: relative;
+  margin-bottom: 10em;
 }
 body main section {
   border: 2px solid green;
   position: absolute;
   top: -18em;
-  padding: 0 15em;
+  padding: 0 18em;
   display: flex;
   flex-direction: row;
   width: 100%;
@@ -133,6 +131,57 @@ body main section .col2 {
 }
 body main section .col2 .title {
   display: flex;
+  justify-content: space-between;
+  margin-top: 2em;
+}
+body main section .col2 .login {
+  background-color: #458eff;
+  padding: 0 3em;
+  border-radius: 0.5em;
+  display: flex;
+  align-items: center;
+  color: white;
+  font-weight: 600;
+}
+body main section .col2 article {
+  border: 1px solid white;
+  border-radius: 0.5em;
+  background-color: white;
+  height: fit-content;
+  margin-top: 2em;
+  padding: 2em 6em 0em 3em;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+body main section .col2 article * {
+  text-align: left;
+}
+body main section .col2 article p:first-of-type {
+  padding-top: 2em;
+}
+body main section .col2 article p {
+  padding-bottom: 1em;
+}
+body main section .col2 article .buttons {
+  border: 2px solid red;
+}
+body footer {
+  width: 100vw;
+  background-color: white;
+  border: 2px solid orange;
+  margin-top: 40em;
+}
+body footer ul {
+  width: 60%;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+body footer ul li:not(:last-of-type) {
+  font-weight: 600;
+  color: #458eff;
 }
 
 /*# sourceMappingURL=app.css.map */
